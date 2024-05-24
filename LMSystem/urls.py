@@ -20,6 +20,7 @@ urlpatterns = [
     path('book/<int:pk>/',BookView.as_view({'get':'retrieve','put':'update','delete':'destroy'})),
 
     path('bookfile/',BookFileView.as_view()),
+
     path('bookfile/<int:pk>/',BookFileViewDetail.as_view(),name='bookfile-detail'),
 ]
 
